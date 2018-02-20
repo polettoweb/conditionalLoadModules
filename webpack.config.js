@@ -14,7 +14,7 @@ const config = {
       test: /\.js$/,
       include: path.resolve(__dirname, 'source'),
       use: [{
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       }]
     }]
   }
