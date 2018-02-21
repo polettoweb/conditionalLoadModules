@@ -1,12 +1,17 @@
+// import 'babel-core/register';
+// import 'babel-polyfill';
+ 
 
 //const jsToggle = document.querySelector('.js-toggle');
 const root = document.querySelector('#root');
+root.innerHTML = 'Injected';
 async function loadActiveToggle() {
-    const activeToggle = await import('../active-toggle.js');
-    //createGallery(gallery);
+    const { default: activeToggle } = await import('../active-toggle.js');
+    activeToggle();
   }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (root) loadActiveToggle();
+      if (root) loadActiveToggle();
+      console.log('test');
  });
     

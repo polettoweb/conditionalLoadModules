@@ -10,24 +10,13 @@
  *   Can be used with CSS sibling selector to show/hide sections.
  *
  */
+function test() {
+    console.log('Test from Module');
+    return document.querySelector('#root').innerHTML = 'injected from module';
+    
 
-var MgResponsive = MgResponsive || {};
+}
 
-MgResponsive.ActiveToggle = (function ($, Modernizr) {
-    "use strict";
-    return {
-        init: function () {
-            $('.js-toggle').click(function() {
-                var $this = $(this);
+export default test
 
-                // Prevents accordion items from being open at the same time
-                // to remain consistent with the jQuery UI accordions
-                if (!$this.hasClass('active')) {
-                    $('.js-toggle.active').removeClass('active');
-                }
-
-                $this.toggleClass('active');
-            });
-        }
-    }
-}(window.jQuery, Modernizr));
+//console.log('Test from Module');
