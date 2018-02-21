@@ -18,7 +18,7 @@ it will start a webpack watch for the folder (yarn serve if you need dev server)
 
 ```bash
 gulp JS
-``
+```
 
 it will transpile and move the code using webpack config file (gulp if you want browsersync)
 
