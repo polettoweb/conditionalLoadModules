@@ -9,6 +9,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.6",
+    "glob": "^7.1.2",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
     "gulp-uglify": "^3.0.0",
@@ -22,5 +23,8 @@
     "start": "webpack --watch",
     "build": "webpack -p",
     "serve": "node_modules/.bin/webpack-dev-server"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.2.0"
   }
 }
